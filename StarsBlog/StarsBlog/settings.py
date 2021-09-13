@@ -82,12 +82,12 @@ WSGI_APPLICATION = 'StarsBlog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'DB_Blog',
-        'USER': 'root',
-        'PASSWORD': '12345',
-        'HOST': '127.0.0.1',
-        'PORT': '3306'
+        'ENGINE': 'django.db.backends.mysql',   # 数据库引擎
+        'NAME': 'DB_Blog',                      # 数据库名
+        'USER': 'root',                         # 账号
+        'PASSWORD': '12345',                    # 密码
+        'HOST': '127.0.0.1',                    # HOST
+        'PORT': '3306'                          # 端口
     }
 }
 
