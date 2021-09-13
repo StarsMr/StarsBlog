@@ -1,0 +1,22 @@
+配置Mysql 数据库
+1.新建一个mysql 数据库：
+ create database StarsBlog charset utf8;
+2.新建一个mysql用户：
+ create user Stars identified by '123456';
+3.授权Stars 用户访问 StarsBlog 数据库权限：
+ grant all on StarsBlog.* to 'Stars'@'%';
+4.刷新：
+ flush privileges;
+
+ 配置Mysql数据库
+ 
+ DATABASES = {
+ 'default': {
+  'ENGINE': 'django.db.backends.mysql',　　# 数据库引擎
+  'NAME': 'django',　　　　　　　　　　　　　　# 你要存储数据的库名，事先要创建之
+  'USER': 'django',　　　　　　　　　　　　　　# 数据库用户名
+  'PASSWORD': 'django@123',　　　　　　　　　# 密码
+  'HOST': 'localhost',　　　　　　　　　　　　# 主机
+  'PORT': '3306',　　　　　　　　　　　　　　 # 数据库使用的端口
+ }
+}
